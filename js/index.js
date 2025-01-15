@@ -4,10 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
     const footer = document.createElement("footer");
+
     const copyright = document.createElement("p");
     copyright.innerHTML = `© Abraham Flores ${thisYear}`;
+
     footer.appendChild(copyright);
     document.body.appendChild(footer);
+
+    const footerElement = document.querySelector("footer")
+    console.log(footerElement); 
+
+
 
     
     const skills = ["javaScript", "HTML", "CSS", "Python", "MySQL"];
